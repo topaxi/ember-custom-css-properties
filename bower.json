@@ -9,5 +9,9 @@
     "mocha": "~2.4.5",
     "ember-mocha-adapter": "~0.3.1",
     "ember-mocha": "~0.8.8"
+  },
+  "resolutions": {
+    "chai": "~3.5.0",
+    "mocha": "~2.4.5"
   }
 }
