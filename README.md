@@ -26,10 +26,28 @@ export default Component.extend({
 })
 ```
 
-Will result in a element like this:
+Will result in an element like this:
 
 ```html
 <div style="--foo-bar:5;--baz:5px"></div>
+```
+
+You may define your own property name mapping using a colon:
+
+```javascript
+import Component from `ember-component`
+
+export default Component.extend({
+  cssPropertyBindings: [ 'fooBar:foobar' ],
+
+  fooBar: 5
+})
+```
+
+Will result in an element like this:
+
+```html
+<div style="--foobar:5"></div>
 ```
 
 Currently, javascript numbers, CSS number values and hex colors are treated as `safe` by default,
